@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/23506a5a85.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Profile Portfolio</title>
+</head>
+<body>
+        <nav id="navbar" class="nav">
+            <ul class="nav-list">
+                <li class="current-page"><a href="#welcome-section">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a ></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Welcome and Projects Section-->
+    <section id="welcome-section" class="welcome-section">
+            <img id="profile-img" src="images//profile.jpg" alt="Profile">
+            <h1>Hi there, I'm Sanele</h1>
+            <p>A Web Developer</p>
+    </section>
+
+    <section id="about-me">
+        <h1>About Me</h1>
+        <p>
+            From South Africa, I am a self-taught Web 
+            Developer, I love learning new technologies and solving problems.
+            I am proficient in HTML and CSS but have build projects with little JavaScript 
+            and SASS. I am currrently learning JavaScript while building  small projects to 
+            advance my skills.
+        </p>
+    </section>
+
+     <!-- Projects Section -->
+    <section id="projects" class="project-sesction">
+        <h2 class="project-section-header">These are some of my projects</h2>
+
+        <div class="projects-grid">
+            <a href="https://codepen.io/sanelemkhize/pen/xxdGdqz" target="_blank" class="project project-tile">
+                <img class="project-image" src="images/Nelson-Mandela.jpg" alt="Mandela">
+                <p class="project-title"> <span class="code">&lt;</span> Tribute Page <span class="code">&#47;&gt;</span></p>
+            </a>
+
+            <a href="https://sanelemkhize.github.io/MASON-CAFE/" target="_blank" class="project project-tile">
+                <img class="project-image" src="images/coffee-cafe.jpg" alt="Mandela">
+                <p class="project-title"> <span class="code">&lt;</span>Cafe Resturant<span class="code">&#47;&gt;</span></p>
+            </a>
+
+            <a href="https://codepen.io/sanelemkhize/pen/KKmQPYE" target="_blank" class="project project-tile">
+                <img class="project-image" src="images/eThekwini.com.jpg">
+                <p class="project-title"> <span class="code">&lt;</span>Landing Page<span class="code">&#47;&gt;</span></p>
+            </a>
+        </div>
+
+        <a href="https://codepen.io/sanelemkhize" class="btn btn-show-all" target="_blank">Show all <i class="fas fa-chevron-right"></i></a>
+    </section>
+
+    <!-- Contact Session -->
+    <section id="contact" class="contact-section">
+        <div class="contact-section-header">
+            <h2>Let's get in Touch!...</h2>
+            <p>How do you like your ice-tea</p>
+        </div>
+        <div>
+            <ul  class="social-links">
+                <li><a href="https://twitter.com/MasonRSA"><img src="images/social-links/twitter.png"></a></li>
+                <li><a href="# "><img src="images/social-links/instagram.png"></a></li>
+                <li><a href="# "><img src="images/social-links/facebook.png"></a></li>
+                <li><a href="mailto:sanele05mkhize@gmail.com"><img src="images/social-links/email.png"></a></li>
+                <li id="linkedin"><a href="https://www.linkedin.com/in/sanele-mkhize-61b19a139/"><i class="fab fa-linkedin"></i></a></li>
+                <li id="github"><a href="https://github.com/sanelemkhize"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+        
+    </section>
+
+    <script>
+        // Smooth Scrolling
+        $('.cf a').on('click', function (event) {
+            if (this.hash !== '') {
+                event.preventDefault();
+
+                const hash = this.hash;
+
+                $('html, body').animate(
+                    {
+                        scrollTop: $(hash).offset().top
+                    },
+                    800,
+                    function () {
+                        window.location.hash = hash;
+                    }
+                );
+            }
+        });
+    </script>
+
+    <footer>
+        copyright &copy; Sanele Mkhize 2022, All rights reserved
+    </footer>
+</body>
+</html>

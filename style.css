@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+} 
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    /* background: #000000; */
+    background: url('images/login-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+/* Nav */
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+}
+
+.nav-list a {
+    display: block;
+    font-size: 1.2rem;
+    padding: 2rem;
+    font-variant: small-caps;
+    font-weight: 700;
+    color: #800000;
+}
+
+nav ul li a:hover {
+    color: #4b0082;
+}
+
+/* Welcome Section */
+#welcome {
+    text-align: center;
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.welcome-section h1 {
+    padding: 10px;
+}
+
+.welcome-section p {
+    font-size: 1.2rem;
+}
+
+.current-page {
+    color: #4b0082;
+}
+
+#about-me {
+    margin-bottom: 10px;
+    height: 10vw;
+    border-bottom: 2px solid rgba(184,184,184, 0.2);
+}
+ 
+#about-me h1 {
+    float: left;
+    width: 20%;
+    color: #fff;
+    padding-left: 80px;
+} 
+
+#about-me p {
+    float: right;
+    width: 40%;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    border-radius: 5px;
+    margin-right: 80px; 
+    background: rgba(184,184,184, 0.2);
+    padding-right: 59px;
+    color: #fff;
+} 
+
+/* Priojects Section */
+.project-section {
+    text-align: center;
+    padding: 10rem 2rem;
+}
+
+.project-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid rgba(184,184,184, 0.2);
+    text-align: center;
+    font-size: 2.3rem;
+    padding-top: 83px;
+    font-weight: 800;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.project {
+    background: #808080;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+#profile-img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    border: 2px solid gray;
+}
+
+.code {
+    color: #808080;
+    transition: color 0.3s ease-out;
+}
+
+.project:hover .code {
+    color: #ff7f50;
+}
+
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-title {
+    font-size: 1.3rem;
+    padding: 2rem 0.5rem;
+    text-align: center;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.3rem 0.1rem;
+    border-radius: 3px;
+    color: #fff;
+    margin-left: 590px;
+}
+
+.btn-show-all {
+    font-size: 1.4rem;
+    background: #808080;
+    transition: background 0.3s ease-out;
+}
+
+.btn-show-all:hover {
+    background: rgb(143, 21, 231);
+}
+
+  .btn-show-all:hover > i {
+    transform: translateX(2px);
+  }
+  
+  .btn-show-all > i {
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+  }
+  
+  /* Contact Session */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+}
+
+.contact-section-header > h2 {
+    font-size: 3rem;
+}
+
+.contact-section-header > p {
+    font-style: italic;
+}
+
+.social-links {
+    position: relative;
+    bottom: -10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 72px;
+}
+
+.social-links li a {
+    display: block;
+    filter: invert(1);
+    margin-right: 10px;
+    transform: scale(0.5);
+    transition: 0.5s;
+}
+
+.social-links li a:hover {
+    transform: scale(0.5) translateY(25px);
+}
+
+#linkedin {
+    font-size: 5.3rem;
+}
+
+#linkedin i {
+    color: #000000;
+}
+
+#github {
+    font-size: 5.4rem;
+}
+
+#github i {
+    color: black;
+}
+
+/* Footer */
+footer {
+    font-weight: 400;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    font-size: 1.2rem;
+    border-top: 3px solid #800000;
+}
+
+
+
